@@ -1,0 +1,43 @@
+body {
+    background: url(../images/bg.png);
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.keyList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.keyInfo {
+    margin-top: 250px;
+}
+
+.key {
+    background: rgba(255, 255, 255, 0.589);
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+h4 {
+    margin: 10px;
+    font-size: 30px;
+}
+
+p {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+}

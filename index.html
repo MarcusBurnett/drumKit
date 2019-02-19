@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drumkit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title col-12">
+            <!-- <input type="text" onkeypress = 'keycode()'> -->
+            <h1>Javascript Drumkit</h1>
+        </div>
+        <div class="keyInfo">
+            <h3>Use your keyboard to play the drums</h3>
+            <div class="row" id="keyList">
+                <button class="key" src="sounds/clap.wav" id="clapButton" >
+                    <audio id="clap" controls style="display:none">
+                        <source src="sounds/clap.wav" type="audio/mpeg">
+                    </audio>
+                    <h4>A</h4>
+                    <p>Clap</p>
+                </button>
+                <button class="key" id="hihatButton" >
+                    <audio controls style="display:none" id="hihat" onclick="play()">
+                        <source src="sounds/hihat.wav" type="audio/mpeg">
+                    </audio>
+                    <h4>S</h4>
+                    <p>Hihat</p>
+                </button>
+                <button class="key" id="kickButton" >
+                    <audio controls style="display:none" id="kick" onclick="play()">
+                        <source src="sounds/kick.wav" type="audio/mpeg">
+                    </audio>
+                    <h4>D</h4>
+                    <p>Kick</p>
+                </button>
+                <button class="key" id="openhatButton">
+                    <audio controls style="display:none" id="openhat" onclick="play()">
+                        <source src="sounds/openhat.wav" type="audio/mpeg">
+                    </audio>
+                    <h4>F</h4>
+                    <p>Openhat</p>
+                </button>
+                <button class="key" id="boomButton">
+                    <audio controls style="display:none" id="boom" onclick="play()">
+                        <source src="sounds/boom.wav" type="audio/mpeg">
+                    </audio>
+                    <h4>G</h4>
+                    <p>Boom</p>
+                </button>
+                <button class="key" id="rideButton">
+                    <audio controls style="display:none" id="ride" onclick="play()">
+                        <source src="sounds/ride.wav" type="audio/mpeg">
+                    </audio>
+                    <h4>H</h4>
+                    <p>Ride</p>
+                </button>
+                <button class="key" id="snareButton">
+                    <audio controls style="display:none" id="snare" onclick="play()">
+                        <source src="sounds/snare.wav" type="audio/mpeg">
+                    </audio>
+                    <h4>J</h4>
+                    <p>Snare</p>
+                </button>
+                <button class="key" id="tomButton">
+                    <audio controls style="display:none" id="tom" onclick="play()">
+                        <source src="sounds/tom.wav" type="audio/mpeg">
+                    </audio>
+                    <h4>K</h4>
+                    <p>Tom</p>
+                </button>
+                <button class="key" id="tinkButton">
+                    <audio controls style="display:none" id="tink" onclick="keySound()">
+                        <source src="sounds/tink.wav" type="audio/mpeg" >
+                    </audio>
+                    <h4>L</h4>
+                    <p>Tink</p>
+                </button>
+            </div> 
+        </div>
+    
+    
+    <script src='app.js'></script>
+</body>
+</html>
